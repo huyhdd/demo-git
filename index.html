@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dinographic</title>
+    <!-- Include Google fonts: Frijole, Open Sans, Oswald -->
+    <link href="https://fonts.googleapis.com/css?family=Frijole|Open+Sans|Oswald&display=swap" rel="stylesheet">
+    <!-- Normalize browser styles -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="app.css" rel="stylesheet">
+    <!-- Link to app.js with defer till HTML render -->
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>hello</h2>
+        <h1>DINOSAURS</h1>
+        <h2 class="title-form">Luân ăn lồn không?</h2>
+        
+        <form id="form" action="">
+            <div class="form-group">
+                <h2 class="info">Name:</h2>
+                <input class="name" type="text">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <h2 class="info">Height</h2>
+                <label>Feet:</label>
+                <input class="feet" type="text">
+                <label class="height-inches">Inches:</label>
+                <input class="inches" type="text">
+                <span class="error-message"></span>
+            </div>
+          
+           <div class="form-group">
+                <h2 class="info">Weight:</h2>
+                <input class="weight" type="text">
+                <p>lbs</p>
+                <span class="error-message"></span>
+           </div>
+
+          <div class="form-group">
+              <h2 class="info">Diet</h2>
+              <select name="diet" id="diet">
+                <option value="herbivores">Herbivores</option>
+                <option value="carnivores">Carnivores</option>
+                <option value="omnivores">Omnivores</option>
+            </select>
+          </div>
+          <div class="form-group">
+          <button onClick="Validate()" >Compare Me!</button>
+          <button onClick="clearInput()">Clear All</button>
+          </div>
+
+        </form>
+        <p class="source">Data sourced from <a href="#">Wikipedia.org</a>. All numbers are approximations.</p>
+        <h1 style="font-size: 25px" class="project">A PROJECT FOR UDACITY'S INTERMEDIATE JAVASCRIPT NANODEGREE</h1>
+
+    </div>
+</body>
+
+<!-- 1. Tat ca cac truong k dc trong
+    2. Ten khong chua ky tu dac biet tru dau cach, loai bo khoang trang o dau va cuoi.
+    3. Chieu cao, can nang la so > 0.
+--> 

@@ -1,0 +1,130 @@
+/* General Styles 
+h1: font-family: 'Frijole', cursive; font-size: 3em; font-weight: 400
+h2,h3: font-family: 'Oswald', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(111, 208, 224);
+    background: linear-gradient(0deg,rgb(111, 208, 224) 0%, rgb(171, 228, 167) 100%);
+    width: 100vw;
+    height: 100vh;
+}
+
+@media (min-width: 650px) {
+    h1 {
+        font-size: 5em;
+    }
+}
+
+@media (min-width: 920px) {
+    h1 {
+        font-size: 8em;
+    }
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container h1 {
+    font-family: 'Frijole', cursive;
+    font-size: 4em;
+    font-weight: 400
+}
+
+.container h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.title-form {
+    margin: -15px;
+}
+
+form {
+    border-radius: 20px;
+    width: 380px;
+    height: 450px;
+    margin-top: 20px;
+    background-color: #e6e6e6;
+}
+
+.form-group {
+    margin: 15px 20px
+}
+
+.Invalid input{
+    outline: 1px solid red
+}
+
+.error-message {
+    margin-top: 5px;
+    color: red;
+}
+
+.info {
+    margin-bottom: 5px;
+}
+
+form div:nth-child(1) {
+    margin-top: 25px;
+}
+
+form div input {
+    width: 100%;
+}
+
+form div:nth-child(2) input{
+    width: 33%;
+}
+
+
+
+.height-inches {
+    margin-left: 10px;
+}
+
+
+
+form div:nth-child(5)  {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    border-radius: 8px;
+    border: none;
+    padding: 5px;
+    outline: none;
+}
+
+button {
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    background: #cacaca;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #b0b0b0;
+}
+
+select {
+    width: 100%;
+}
+
+.source {
+    margin-top: 50px;
+    font-size: 12px;
+}
+
